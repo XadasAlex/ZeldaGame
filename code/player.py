@@ -2,7 +2,7 @@ import pygame
 from settings import *
 
 # useless comment
-# ohhhhhh max
+# ohhhhhh maxx
 
 class Player(pygame.sprite.Sprite):
 	def __init__(self,pos,groups):
