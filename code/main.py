@@ -3,6 +3,7 @@ from settings import *
 from level import Level
 
 #ef neues whatsapp bruder
+# neuer chatbot ez
 
 class Game:
     def __init__(self):

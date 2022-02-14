@@ -5,6 +5,7 @@ from settings import *
 # ohhhhhh maxx
 # I made some important changes to the project
 # sheesh
+# sheesh maaaax
 
 class Player(pygame.sprite.Sprite):
 	def __init__(self, pos, groups):
