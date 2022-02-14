@@ -1,11 +1,7 @@
 import pygame
 from settings import *
 
-# useless comment
-# ohhhhhh maxx
-# I made some important changes to the project
-# sheesh
-# sheesh maaaax
+# player class
 
 class Player(pygame.sprite.Sprite):
 	def __init__(self, pos, groups):
