@@ -2,6 +2,7 @@ import pygame, sys
 from settings import *
 from level import Level
 
+#ef neues whatsapp bruder
 
 class Game:
     def __init__(self):
