@@ -35,6 +35,7 @@ class Player(pygame.sprite.Sprite):
     def input(self):
         keys = pygame.key.get_pressed()
 
+		#keys for inventory, attack, etc. are added here
         if keys[pygame.K_w]:
             self.direction.y = -1
         elif keys[pygame.K_s]:
