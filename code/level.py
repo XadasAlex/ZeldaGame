@@ -24,13 +24,15 @@ class Level:
 				x = col_index * TILESIZE
 				y = row_index * TILESIZE
 				if col == 'x':
-					Tile((x, y), [self.visible_sprites,self.obstacle_sprites])
+					Tile((x, y), [self.visible_sprites, self.obstacle_sprites])
 				if col == 'p':
-					self.player = Player((x,y),[self.visible_sprites], self.obstacle_sprites)
+					self.player = Player((x, y), [self.visible_sprites], self.obstacle_sprites)
 					pass
 
 	def run(self):
-		# update and draw the game
+		# update and draw the sprites
 		self.visible_sprites.draw(self.display_surface)
 		self.visible_sprites.update()
+
+		# direction debug
 		debug(self.player.direction)

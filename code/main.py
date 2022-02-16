@@ -1,9 +1,7 @@
 import pygame, sys
 from settings import *
 from level import Level
-
-#ef neues whatsapp bruder
-# neuer chatbot ez
+from debug import *
 
 class Game:
     def __init__(self):
@@ -22,6 +20,9 @@ class Game:
 
             self.screen.fill('black')
             self.level.run()
+
+            # draw current fps
+            show_fps(self.clock.get_fps())
             pygame.display.update()
             self.clock.tick(FPS)
 
