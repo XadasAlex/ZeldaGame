@@ -1,5 +1,5 @@
 FPS = 60
-TILESIZE = 16
+TILESIZE = 64  # scaled from 16 to 64
 WIDTH = 1280
 HEIGTH = 720
 
