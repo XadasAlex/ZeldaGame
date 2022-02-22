@@ -35,7 +35,7 @@ class Level:
 		self.visible_sprites.update()
 
 		# direction debug
-		debug(self.player.direction)
+		# debug(self.player.direction)
 
 
 class YSortCameraGroup(pygame.sprite.Group):

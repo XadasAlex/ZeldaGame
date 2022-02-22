@@ -2,6 +2,7 @@ import pygame, sys
 from settings import *
 from level import Level
 from debug import *
+from slime import *
 
 
 class Game:
@@ -12,6 +13,11 @@ class Game:
         self.clock = pygame.time.Clock()
         self.level = Level()
 
+        # experimental slime
+        self.slime = pygame.sprite.GroupSingle()
+        self.slime.add(Slime())
+
+
     def run(self):
         while True:
             for event in pygame.event.get():
@@ -20,11 +26,16 @@ class Game:
                     sys.exit()
 
             self.screen.fill('black')
+
+            # experimental slime
+            self.slime.draw(self.screen)
+            self.slime.update()
             self.level.run()
 
             # draw current fps
-            show_fps(self.clock.get_fps())
+            # show_fps(self.clock.get_fps())
             pygame.display.update()
+
             self.clock.tick(FPS)
 
 

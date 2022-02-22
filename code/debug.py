@@ -18,3 +18,5 @@ def show_fps(fps, x=10, y=35):
     debug_rect = debug_surface.get_rect(topleft=(x, y))
     pygame.draw.rect(display_surface, 'black', debug_rect)
     display_surface.blit(debug_surface, debug_rect)
+
+# todo: write function here that loads image and scales it according to a scaling factor
